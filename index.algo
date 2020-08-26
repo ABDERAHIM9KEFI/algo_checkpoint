@@ -1,0 +1,20 @@
+ALGORITHM checkpoint1 
+VAR
+  i:  INTEGER := 0;
+  w:  INTEGER := 0;
+  v:  INTEGER := 0;
+  str : STRING ;
+BEGIN
+  read(str);
+  WHILE (str[i]<>'.') DO
+    IF (lowercase(str[i])='a' OR lowercase(str[i])='i' OR lowercase(str[i])='o' OR lowercase(str[i])='u' OR lowercase(str[i])='e') THEN
+      v=v+1;
+    END_IF
+    IF (str[i]=' ') THEN
+      w=w+1;
+    END_IF
+    i=i+1;
+  END_WHILE
+  w=w+1;
+  i=i+1;
+END
